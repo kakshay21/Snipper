@@ -1,5 +1,6 @@
 sudo: true
 dist: trusty
+group: deprecated-2017Q3
 language: node_js
 before_install:
 - sudo apt-get install nodejs
@@ -15,5 +16,7 @@ deploy:
   api_key:
     secure: ATvWViMsd387Tkmqwqj9f1T8lbRKWnygfq5NUoqbfh+ZzSkGeepGJQ7Vv30EiC17ocAjAHZxtcFjSTVEPk3GgwvA+nbJmIjeKiyP3y0vNCe8BVRPVHMmrINOOkLqRlXdBBmIgPMiK4cpvEMljj03n9u7cEXTksmnGuBraJBb+lypwa5tfBO39ffMRcdORA4PIEurJXADAKoNsqoBk2rFAFdtUfj26rskiyQr/kI51Sh9njFiwahC581fNUrQF/81V2lqYpTpFTPM9XDt4TAfPxIoT9wk7B8GgGkFqb4KEu6QER70qeKY4kHQ3TMsPBTUTKO2FKZJ/sBeZw/8EfONjzZjRKOE+LoEWiowsulFShmyBGPYwgOP4Gk0FPaf2XGQiKcKH8tBqIe+hJ7EdvqV1rRFjX0m0RuULTMprXicCN5JV0Sjv12a5I+J8MDDMEtdLpPNef0CLXsTcqM1KGByO7bGTef4gEaBnO1R7o6L6BwvGJXt7HcLTxTodSrBZZ1qfzvZtCFJwbS+1Jvp57oNx5Hk2Ov7MuWwrjZOt9vNYHyLSkhXeXRpTANcrG3xl7rU9QlXY+uaE9ldCqZH7VPX4fM7oKqG3brUUBoOphu5U7ekji5E7z7MIjF9iJ8Wos1SdZdVFnr/TU9MiVhAFp3b+wP5vy+/2q6GJOBAOGx0HhQ=
   file: '*'
+  skip_cleanup: true
   on:
     repo: kakshay21/Snipper
+    tags: true
