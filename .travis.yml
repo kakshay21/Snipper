@@ -4,13 +4,15 @@ group: deprecated-2017Q3
 language: node_js
 before_install:
 - sudo apt-get install nodejs-legacy
+- sudo apt-get install build-essential
+- sudo apt-get install npm
 - sudo npm install -g n
 - sudo n stable
 install:
 - npm install electron --save -dev
 - npm install
 script:
-- npm run release
+- npm start
 deploy:
   provider: releases
   api_key:
