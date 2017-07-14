@@ -3,12 +3,12 @@ dist: trusty
 group: deprecated-2017Q3
 language: node_js
 before_install:
-- sudo apt-get install nodejs
-- sudo apt-get install npm
+- sudo apt-get install nodejs-legacy
+- sudo npm install -g n
+- sudo n stable
 install:
 - npm install electron --save -dev
 - npm install
-- npm install react-ace
 script:
 - npm run release
 deploy:
